@@ -2,8 +2,11 @@ board=['' for x in range (10)]
 
 
 def isBoardFull(board):
-    pass
-
+    if board.count(' ')>1:
+        return False
+    else:
+        return True
+    
 def insertLetter(letter,position):
     board[position]=letter
 
